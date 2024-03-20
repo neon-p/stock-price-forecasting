@@ -1,4 +1,4 @@
-# Stock Price Forcasting
+# Stock Price Forecasting
 
 In this project, our primary focus was on forecasting the closing price of stocks for the next trading day through an analysis of historical stock price data. Initially, we implemented Long Short-Term Memory (LSTM) to capture short-term patterns and forecast the day's closing prices. Additionally, we utilized feature engineering techniques, incorporating the previous day's [open, high, low, close, volume] as input features for predicting the current day's close price. This approach effectively captured short-term trends. Currently, our aim is to enhance the model's capabilities by exploring various deep learning and traditional machine learning techniques, along with further feature engineering on the data.
 
@@ -6,7 +6,7 @@ In this project, our primary focus was on forecasting the closing price of stock
 
 - Source: [Yahoo Finance](https://in.search.yahoo.com/?fr2=inr)
 
-Initially we used last 12 years stock price data of Amazon. We split this dataset into below category
+Initially, we used the last 12 years' stock price data of Amazon. We split this dataset into the below category
 
 #### Train: 2010 - 2020
 
