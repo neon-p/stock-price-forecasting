@@ -28,12 +28,37 @@ stateDiagram-v2
     Forecasting --> Deployment
 
 ```
-## Result
-| Model | Loss | Val Loss | RMSE |
-|----------|----------|----------|----------|
-| LSTM   | 0.0044   | 0.0521   | 0.085   |
 
-Note: RMSE calculated without performing inverse transform. In the next update, we'll gonna update the RMSE score.
+## Hyperparameter Tuning
+We tried lots of configurations for our LSTM architecture below we show our top 5 based on validation loss
+| Epochs | LSTM Units | Optimizer |Val Loss|
+|--------|------------|-----------|--------|
+|   150  |    100     |   Adam    | 0.0072 |
+|   130  |    150     |   Adam    | 0.0083 |
+|   140  |    100     |   Adam    | 0.0086 |
+|   100  |    100     |   Adam    | 0.0090 |
+|   120  |    100     |   Adam    | 0.0101 |
+
+Best Hyparameters (based on low MSE): 120,100,Adam
+
+Best Hyparameters for Random Forest
+
+| Hyperparameter      | Value |
+|---------------------|-------|
+| max_depth           | 20    |
+| max_features        | sqrt  |
+| min_samples_leaf    | 2     |
+| min_samples_split   | 5     |
+| n_estimators        | 200   |
+| random_state        | 42    |
+
+
+## Result
+| Model | Loss | Val Loss | RMSE | RMAE |
+|----------|----------|----------|----------|----|
+| LSTM   | 0.0044   | 0.0521   | 0.085   | |
+| Random Forest |- |- | 163.639 | 43.599 |
+
 
 ## Acknowledgements
 
