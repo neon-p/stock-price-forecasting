@@ -56,11 +56,13 @@ Best Hyparameters for Random Forest
 ## Result
 | Model | Val Loss | RMSE | RMAE |
 |--------|----------|----------|----|
-| LSTM   | 0.0521   | 231.997| |
+| LSTM   | 0.0302   | 231.997| |
 | Random Forest |- | 163.639 | 43.599 |
 
 ## Prediction on Test Data
 LSTM
+- Yellow line: Predicted Test
+- Blue Line: Actual Test
 
 ![LSTM](https://github.com/neon-p/stock-price-forecasting/blob/main/lstm_rmse_231.997.png?raw=true)
 
