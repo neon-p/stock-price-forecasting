@@ -30,16 +30,16 @@ stateDiagram-v2
 ```
 
 ## Hyperparameter Tuning
-We tried lots of configurations for our LSTM architecture below we show our top 5 based on validation loss
+We tried lots of configurations for our LSTM architecture below we show our top 5 (based on validation loss)
 | Epochs | LSTM Units | Optimizer |Val Loss|
 |--------|------------|-----------|--------|
-|   150  |    100     |   Adam    | 0.0072 |
 |   130  |    150     |   Adam    | 0.0083 |
 |   140  |    100     |   Adam    | 0.0086 |
 |   100  |    100     |   Adam    | 0.0090 |
 |   120  |    100     |   Adam    | 0.0101 |
+|   90   |    100     |   Adam    | 0.0302 |
 
-Best Hyparameters (based on low MSE): 120,100,Adam
+Best Hyparameters (based on low MSE): 90, 100, Adam
 
 Best Hyparameters for Random Forest
 
@@ -54,10 +54,19 @@ Best Hyparameters for Random Forest
 
 
 ## Result
-| Model | Loss | Val Loss | RMSE | RMAE |
-|----------|----------|----------|----------|----|
-| LSTM   | 0.0044   | 0.0521   | 0.085   | |
-| Random Forest |- |- | 163.639 | 43.599 |
+| Model | Val Loss | RMSE | RMAE |
+|--------|----------|----------|----|
+| LSTM   | 0.0521   | 231.997| |
+| Random Forest |- | 163.639 | 43.599 |
+
+## Prediction on Test Data
+LSTM
+
+![Screenshot](https://github.com/neon-p/stock-price-forecasting/blob/main/lstm_rmse_231.997?raw=true)
+
+Random Forest
+
+![Screenshot](https://github.com/neon-p/stock-price-forecasting/blob/main/RF_rmse_163.639.png?raw=true)
 
 
 ## Acknowledgements
