@@ -62,11 +62,11 @@ Best Hyparameters for Random Forest
 ## Prediction on Test Data
 LSTM
 
-![Screenshot](https://github.com/neon-p/stock-price-forecasting/blob/main/lstm_rmse_231.997?raw=true)
+![LSTM](https://github.com/neon-p/stock-price-forecasting/blob/main/lstm_rmse_231.997.png?raw=true)
 
 Random Forest
 
-![Screenshot](https://github.com/neon-p/stock-price-forecasting/blob/main/RF_rmse_163.639.png?raw=true)
+![RF](https://github.com/neon-p/stock-price-forecasting/blob/main/RF_rmse_163.639.png?raw=true)
 
 
 ## Acknowledgements
