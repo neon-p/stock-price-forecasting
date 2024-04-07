@@ -52,24 +52,46 @@ Best Hyparameters for Random Forest
 | n_estimators        | 200   |
 | random_state        | 42    |
 
+Best Hyparameters for XGBoost
+
+| Hyperparameter      | Value |
+|---------------------|-------|
+| colsample_bytree    | 0.8   |
+| gamma               | 0     |
+| learning_rate       | 0.05  |
+| max_depth           | 7     |
+| min_child_weight    | 3     |
+| n_estimators        | 200   |
+| reg_alpha           | 0     |
+| reg_lambda          | 0     |
+| subsample           | 1.0   |
+
+
 
 ## Result
-| Model | Val Loss | RMSE | RMAE |
-|--------|----------|----------|----|
-| LSTM   | 0.0302   | 231.997| |
-| Random Forest |- | 163.639 | 43.599 |
+| Model | RMSE | MAE |
+|--------|----------|----|
+| LSTM   | 677.618 | 565.099 |
+| Random Forest | 174.842 | 55.107 |
+| XGBoost | 196.178 | 73.491 |
+| Random Forest + XGBoost | 170.651 | 51.105 |
 
 ## Prediction on Test Data
 LSTM
-- Yellow line: Predicted Test
-- Blue Line: Actual Test
 
-![LSTM](https://github.com/neon-p/stock-price-forecasting/blob/main/lstm_rmse_231.997.png?raw=true)
+![LSTM](https://github.com/neon-p/stock-price-forecasting/blob/main/lstm_rmse_677.618.png?raw=true)
 
 Random Forest
 
-![RF](https://github.com/neon-p/stock-price-forecasting/blob/main/RF_rmse_163.639.png?raw=true)
+![RF](https://github.com/neon-p/stock-price-forecasting/blob/main/RF_rmse_174.842.png?raw=true)
 
+XGBoost
+
+![XGBoost](https://github.com/neon-p/stock-price-forecasting/blob/main/xgBoost_rmse_196.178.png?raw=true)
+
+Random Forest + XGBoost
+
+![RF](https://github.com/neon-p/stock-price-forecasting/blob/main/RF+xgBoost_rmse_170.651.png?raw=true)
 
 ## Acknowledgements
 
